@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/xautolock -time 8 -locker /usr/local/bin/glitchlock -detectsleep
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Screen-Locker
+Name=Screen-Locker
+Comment[en_US]=Lock the screen automatically after a timeout
+Comment=Lock the screen automatically after a timeout
