@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/usr/bin/xautolock -time 8 -locker /usr/local/bin/glitchlock -detectsleep
+Exec=/usr/bin/xautolock -time 8 -locker /usr/bin/i3lock-fancy -detectsleep
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true

@@ -4,25 +4,16 @@ Instalacion de i3lock personalizado basado en i3lock-fancy, configurado para el 
 
 i3lock-fancy: [github](https://github.com/meskarune/i3lock-fancy)
 
+![screen shot of lockscreen](screenshot.png)
+
 ## Instalacion
 
 1. Ejecutar los siguientes comandos:
 
 ```bash
-cd ~
-git clone https://git.lunix.com.ar/avillalba/script-i3lock.git
-cd script-i3lock
-sudo make install
-sudo cp i3lock-fancy /usr/local/bin/i3lock-fancy
-sudo chmod +x /usr/local/bin/i3lock-fancy
-cd ..
-rm -r script-i3lock
+git clone https://github.com/avillalba96/script-i3lock.git && cd "$(basename "$_" .git)"
 sudo apt install xautolock -y
-#sudo cp i3lock-fancy.service /etc/systemd/system/i3lock-fancy.service
-#sudo chmod 664 /etc/systemd/system/i3lock-fancy.service
-#systemctl start i3lock-fancy.service
-#systemctl enable i3lock-fancy.service
-cp xautolock.desktop ~/.config/autostart/xautolock.desktop
+sudo make install
 ```
 
 ## Configurar "Shortcut"
