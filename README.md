@@ -6,6 +6,10 @@ i3lock-fancy: [github](https://github.com/meskarune/i3lock-fancy)
 
 ![screen shot of lockscreen](screenshot.png)
 
+## **TAREAS**
+
+* **ACOMODAR INSTALACION, FALLABA EN MAKE Y EN EL ATAJO**
+
 ## Instalacion
 
 1. Ejecutar los siguientes comandos:
