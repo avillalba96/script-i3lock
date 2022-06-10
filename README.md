@@ -12,8 +12,9 @@ i3lock-fancy: [github](https://github.com/meskarune/i3lock-fancy)
 
 ```bash
 git clone https://github.com/avillalba96/script-i3lock.git && cd "$(basename "$_" .git)"
-sudo apt install xautolock -y
+sudo apt install xautolock imagemagick -y
 sudo make install
+https://github.com/Raymo111/i3lock-color #instalar esta dependencia
 ```
 
 ## Configurar "Shortcut"
