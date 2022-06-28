@@ -11,13 +11,19 @@ i3lock-fancy: [github](https://github.com/meskarune/i3lock-fancy)
 1. Ejecutar los siguientes comandos:
 
 ```bash
+# Se instalan los paquetes necesarios
+git clone https://github.com/Raymo111/i3lock-color.git && cd "$(basename "$_" .git)"
+./build.sh; ./install-i3lock-color.sh
+sudo apt-get install -y xautolock imagemagick autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev
+cd ..; sudo rm -r i3lock-color
+# Se instala i3lock personalizado
 git clone https://github.com/avillalba96/script-i3lock.git && cd "$(basename "$_" .git)"
-sudo apt install -y xautolock imagemagick autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev
 sudo make install
+cd ..; sudo rm -r script-i3lock
 ```
 
 ## Configurar "Shortcut"
 
 ```python
-python3 set_customshortcut.py "i3lock-fancy" "i3lock-fancy" "<Primary><Alt>e"
+python3 set_customshortcut.py "i3lock-fancy" "i3lock-fancy" "<Primary><Alt>e" #gnome-tweaks
 ```
