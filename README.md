@@ -12,9 +12,9 @@ i3lock-fancy: [github](https://github.com/meskarune/i3lock-fancy)
 
 ```bash
 # Se instalan los paquetes necesarios
+sudo apt-get install -y i3lock xautolock imagemagick autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev
 git clone https://github.com/Raymo111/i3lock-color.git && cd "$(basename "$_" .git)"
 ./build.sh; ./install-i3lock-color.sh
-sudo apt-get install -y xautolock imagemagick autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev
 cd ..; sudo rm -r i3lock-color
 # Se instala i3lock personalizado
 git clone https://github.com/avillalba96/script-i3lock.git && cd "$(basename "$_" .git)"
