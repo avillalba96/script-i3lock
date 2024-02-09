@@ -19,6 +19,7 @@ cd ..; sudo rm -r i3lock-color
 # Se instala i3lock personalizado
 git clone https://github.com/avillalba96/script-i3lock.git && cd "$(basename "$_" .git)"
 sudo make install
+cp xautolock.desktop ~/.config/autostart/
 cd ..; sudo rm -r script-i3lock
 ```
 
